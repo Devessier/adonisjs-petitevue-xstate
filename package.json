@@ -9,7 +9,7 @@
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
     "install": "npm run build",
-    "start": "node server.js",
+    "start": "cd build && node server.js",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
   },
@@ -71,5 +71,8 @@
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.21",
     "xstate": "^4.31.0"
+  },
+  "volta": {
+    "node": "16.14.2"
   }
 }
